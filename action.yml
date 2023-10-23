@@ -33,7 +33,6 @@ runs:
   steps:
     - name: Install and configure Poetry
       run: $GITHUB_ACTION_PATH/main.sh
-      shell: bash
       env:
         VERSION:                ${{ inputs.version }}
         VIRTUALENVS_CREATE:     ${{ inputs.virtualenvs-create }}
